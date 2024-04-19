@@ -1,0 +1,116 @@
+body {
+    font-family: 'Manrope', sans-serif;
+    background: #f7e8ec;
+    color: black;
+    margin: 0;
+}
+
+/*HEADER*/
+header {
+    font-size: 1.3em;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 25px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding-bottom: 5px;
+    background: linear-gradient(#b96c82, #f8e5e9);
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    text-shadow: 3px 3px 5px #944456;
+    border: 2px solid #e799ac;
+    border-radius: 5px;
+    background: #e799ac;
+    transition-property: transform;
+    transition-duration: 200ms;
+    /*aussi juste -> transition: transform 200ms; */
+    &:hover { /*pour mettre une pseudo-classe à cet élément et facilité la lecture du code*/
+        transform: scale(1.05);
+    }
+    &:active {
+        transform: scale(1);
+    }
+}
+
+header .logo {
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 5px;
+}
+
+/*MAIN*/
+main {
+    margin: 30px;
+}
+
+section {
+    margin-bottom: 100px;
+}
+
+main a {
+    text-decoration: none;
+    color: #b96c82;
+    &:hover {
+        text-decoration: underline;
+    }
+    &:active {
+        color: grey;
+    }
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: rgb(85, 85, 85);
+    font-style: italic;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+    margin-top: 0px;
+
+}
+
+@counter-style contacts {
+    system: fixed;
+    symbols: ✉ ☎;
+    suffix: "  ";
+}
+
+.contacts {
+    list-style: contacts;
+}
+
+textarea {
+    margin: 15px;
+    width: 500px;
+    height: 100px;
+}
+
+li {
+    color: #b96c82;
+}
+
+.fr {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+.en {
+    color: rgb(85, 85, 85);
+    font-style: italic;
+    font-size: 1em;
+    margin-top: 0px;
+}
